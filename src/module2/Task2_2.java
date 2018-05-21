@@ -19,12 +19,12 @@ NO
  */
 public class Task2_2 {
     public static void main(String[] args) {
-        int balance = 100;
-        int withdrawal = 102;
+        double balance = 100;
+        double withdrawal = 102;
         getMoney(balance, withdrawal);
     }
 
-    static void getMoney(int balance, int withdrawal) {
+    static void getMoney(double balance, double withdrawal) {
         if (withdrawal >= 0) {
             double commission = withdrawal * 0.05;
             if (balance - (withdrawal + commission) < 0)
