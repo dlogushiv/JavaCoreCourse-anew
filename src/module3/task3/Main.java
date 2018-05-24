@@ -24,7 +24,9 @@ public class Main {
         SpecialStudent student7 = new SpecialStudent("S", new Course[]{courseArt, courseLit, courseUkr});
         SpecialStudent student8 = new SpecialStudent(69785876);
 
-
+        courseMath.setTeacherName("Mr. Peterson");
+        System.out.println(courseMath.getName());
+        System.out.println(courseMath.toString());
 
     }
 }
