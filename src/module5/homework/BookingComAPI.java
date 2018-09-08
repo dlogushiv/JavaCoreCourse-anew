@@ -6,11 +6,11 @@ public class BookingComAPI implements API {
     private static Room[] rooms = new Room[5];
 
     public BookingComAPI() {
-        rooms[0] = new Room(1, 200, 2, new Date(), "Quine Hotel", "London");
-        rooms[1] = new Room(2, 500, 3, new Date(), "Paradise", "LA");
-        rooms[2] = new Room(3, 100, 2, new Date(), "Budi Bora", "Goa");
-        rooms[3] = new Room(4, 300, 1, new Date(), "MonAmi", "Paris");
-        rooms[4] = new Room(5, 150, 2, new Date(), "Lybid", "Kiev");
+        rooms[0] = new Room(101, 200, 2, new Date(), "Quine Hotel", "London");
+        rooms[1] = new Room(102, 500, 3, new Date(), "Paradise", "LA");
+        rooms[2] = new Room(103, 100, 2, new Date(), "Budi Bora", "Goa");
+        rooms[3] = new Room(104, 300, 1, new Date(), "MonAmi", "Paris");
+        rooms[4] = new Room(105, 150, 2, new Date(), "Lybid", "Kiev");
     }
 
     @Override

@@ -6,11 +6,11 @@ public class TripAdvisorAPI implements API {
     private static Room[] rooms = new Room[5];
 
     public TripAdvisorAPI() {
-        rooms[0] = new Room(1, 500, 3, new Date(), "Paradise", "LA");
-        rooms[1] = new Room(2, 150, 2, new Date(), "Lybid", "Kiev");
-        rooms[2] = new Room(3, 200, 4, new Date(), "ChouCho", "Poltava");
-        rooms[3] = new Room(4, 50, 1, new Date(), "238", "Tokio");
-        rooms[4] = new Room(5, 500, 3, new Date(), "Paradise", "LA");
+        rooms[0] = new Room(201, 400, 3, new Date(), "Paradise", "LA");
+        rooms[1] = new Room(202, 150, 2, new Date(), "Lybid", "Kiev");
+        rooms[2] = new Room(203, 200, 4, new Date(), "ChouCho", "Poltava");
+        rooms[3] = new Room(204, 50, 1, new Date(), "238", "Tokio");
+        rooms[4] = new Room(205, 500, 3, new Date(), "Paradise", "LA");
     }
 
     @Override
