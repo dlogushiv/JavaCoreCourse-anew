@@ -27,4 +27,9 @@ public class DAOImpl implements DAO {
         System.out.println("Room with id " + id + " was found in DB.");
         return room;
     }
+
+    @Override
+    public Room[] getAll() {
+        return new Room[0];
+    }
 }

@@ -1,7 +1,9 @@
 package module5.homework;
 
+
 public class Controller {
     private API apis[] = new API[3];
+    private DAOHardImpl daoHard=new DAOHardImpl();
 
     public Controller(API[] apis) {
         this.apis = apis;
@@ -70,4 +72,25 @@ public class Controller {
         }
         return result;
     }
+
+    Room save(Room room) {
+        return daoHard.save(room);
+    }
+
+    boolean delete(Room room){
+        return daoHard.delete(room);
+    }
+
+    Room update(Room room){
+        return daoHard.update(room);
+    }
+
+    Room findById(long id){
+        return daoHard.findById(id);
+    }
+
+    Room[] getAllRooms(){
+        return daoHard.getAll();
+    }
+
 }

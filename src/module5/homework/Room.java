@@ -97,6 +97,6 @@ public class Room {
                 ", available from " + dateAvailableFrom +
                 ", hotel: " + hotelName +
                 ", city: " + cityName +
-                ';';
+                '.';
     }
 }
