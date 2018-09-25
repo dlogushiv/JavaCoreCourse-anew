@@ -29,7 +29,7 @@ long id
 int price
 Currency currency
 String itemName
-String shopIdentificator
+String shopIdentification
 User user
 
 «¿ƒ¿Õ»≈ 2
@@ -38,7 +38,7 @@ Create Main class where you create 10 Orders with 10 Users and put it to the Lis
 
 - sort list by Order price in decrease order
 - sort list by Order price in increase order AND User city
-- sort list by Order itemName AND ShopIdentificator AND User city
+- sort list by Order itemName AND shopIdentification AND User city
 
 - delete duplicates from the list
 - delete items where price less than 1500
