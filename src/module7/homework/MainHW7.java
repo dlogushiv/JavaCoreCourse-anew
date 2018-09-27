@@ -13,7 +13,7 @@ public class MainHW7 {
         User user4 = new User(4, "Sonya", "Dl", "Vish", 100);
         User user5 = new User(5, "Mila", "Kunis", "NY", 5000);
         User user6 = new User(6, "Stepa", "Velik", "Skaz", 3000);
-        User user7 = new User(7, "Vanya", "Kaban", "Vysh", 20000);
+        User user7 = new User(7, "Vanya", "Kaban", "Kiev", 20000);
         User user8 = new User(8, "Kolya", "Ryb", "Vysh", 700);
         User user9 = new User(9, "Olya", "Krav", "Poltava", 1500);
         User user10 = new User(10, "Ksy", "Tym", "Ovruch", 6800);
@@ -54,19 +54,52 @@ public class MainHW7 {
         ordersList.add(order10);
 
         System.out.println(ordersList);
-        // task 2-1
+        // task 2-1 - Order price in decrease order
         Collections.sort(ordersList, new Comparator<Order>() {
             @Override
             public int compare(Order o1, Order o2) {
-                if (o1.getPrice()==o2.getPrice()){return 0;}
-                else {
-                    return o2.getPrice()>o1.getPrice()?1:-1;
+                if (o1.getPrice() == o2.getPrice()) {
+                    return 0;
+                } else {
+                    return o2.getPrice() > o1.getPrice() ? 1 : -1;
                 }
             }
         });
         System.out.println(ordersList);
 
-        // task 2-2
+        // task 2-2 - Order price in increase order AND User city
+        Collections.sort(ordersList, new Comparator<Order>() {
+            @Override
+            public int compare(Order o1, Order o2) {
+                if (o1.getPrice() == o2.getPrice() && o1.getUser().getCity().equals(o2.getUser().getCity())) {
+                    return 0;
+                } else if (o1.getPrice() == o2.getPrice()) {
+                    return o1.getUser().getCity().compareTo(o2.getUser().getCity());
+                } else {
+                    return o1.getPrice() > o2.getPrice() ? 1 : -1;
+                }
+            }
+        });
+        System.out.println(ordersList);
 
+        // task 2-3 - Order itemName AND shopIdentification AND User city
+        Collections.sort(ordersList, new Comparator<Order>() {
+            @Override
+            public int compare(Order o1, Order o2) {
+                if (o1.getItemName().equals(o2.getItemName())
+                        && o1.getShopIdentification().equals(o2.getShopIdentification())
+                        && o1.getUser().getCity().equals(o2.getUser().getCity())) {
+                    return 0;
+                } else if (o1.getItemName().equals(o2.getItemName())
+                        && o1.getShopIdentification().equals(o2.getShopIdentification())){
+                    return o1.getUser().getCity().compareTo(o2.getUser().getCity());
+                }else if (o1.getItemName().equals(o2.getItemName())){
+                    return o1.getShopIdentification().compareTo(o2.getShopIdentification());
+                } else {
+                    return o1.getItemName().compareTo(o2.getItemName());
+                }
+            }
+        });
+        System.out.println(ordersList);
     }
 }
