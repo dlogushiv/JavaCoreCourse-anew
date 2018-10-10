@@ -47,7 +47,8 @@ Create Main class where you create 10 Orders with 10 Users and put it to the Lis
 
 ÇÀÄÀÍÈÅ 3
 
-Create Main class where you create 10 Orders with 10 Users and put it to the TreeSet. You should create 8 unique and two duplicated Orders
+Create Main class where you create 10 Orders with 10 Users and put it to the TreeSet.
+You should create 8 unique and two duplicated Orders
 
 - check if set contain Order where User’s lastName is - “Petrov”
 - print Order with largest price using only one set method - get 
@@ -59,7 +60,8 @@ User appropriate data structures in Homework in module 5 - all arrays should be 
 
 ÇÀÄÀÍÈÅ 5.
 
-Generate Integer and String ArrayList and LinkedList with 1000 and 10000 elements. Measure time of execution of the following methods and print it to console:
+Generate Integer and String ArrayList and LinkedList with 1000 and 10000 elements.
+Measure time of execution of the following methods and print it to console:
 - add
 - set
 - get

@@ -39,6 +39,16 @@ public class QueueExample {
         queue.offer("six");
         System.out.println(queue);
 
+        Queue<Integer> integerQueue = new PriorityQueue<>();
+        integerQueue.add(100);
+        integerQueue.add(-60);
+        integerQueue.add(20);
+        integerQueue.add(-5);
+        integerQueue.add(3);
+        integerQueue.add(-7);
 
+        while (integerQueue.peek() != null) {
+            System.out.println(integerQueue.remove());
+        }
     }
 }
